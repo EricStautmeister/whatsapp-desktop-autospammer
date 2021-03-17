@@ -47,5 +47,8 @@ if __name__ == '__main__':
     wait(1)
     click()
     wait(1)
+    start = time.time()
     for i in range(main.iterations):
+        wait(0.001)
         write(main.message_to_send)
+    print(f"Total Time: {time.time() - start}s")
